@@ -1,5 +1,5 @@
 body {
-	/*background-color: #FFDAB9;	*/
+	/*background-color: #0a0a0a;	*/
 	background-color: #000;
 	-webkit-transition:background-color linear 5s;
 	-moz-transition:background-color linear 5s;
@@ -12,7 +12,7 @@ body {
 	display: none;
 }
 .peach {
-	background-color: #FFDAB9;
+	background-color: #0a0a0a;
 	
 }
 .peach-after {
@@ -25,90 +25,90 @@ body {
 
 @-webkit-keyframes peach_alive {
 	0%{
-		background-color: #FFDAB9;
+		background-color: #070707;
 	}
 	25%{
-		background-color: #FFE4B5;
+		background-color: #0e0d0d;
 	}
 	50%{
-		background-color: #FFDAB9;
+		background-color: #070707;
 	}
 	75%{
-		background-color: #FFEFD5;
+		background-color: #0c0c0c;
 	}
 	100%{
-		background-color: #FFDAB9;
+		background-color: #0a0a0a;
 	}
 }
 @-moz-keyframes peach_alive {
 	0%{
-		background-color: #FFDAB9;
+		background-color: #0a0a0a;
 	}
 	25%{
-		background-color: #FFE4B5;
+		background-color: #070707;
 	}
 	50%{
-		background-color: #FFDAB9;
+		background-color: #0a0a0a;
 	}
 	75%{
-		background-color: #FFEFD5;
+		background-color: #0e0d0d;
 	}
 	100%{
-		background-color: #FFDAB9;
+		background-color: #0a0a0a;
 	}
 }
 
 @-o-keyframes peach_alive {
 	0%{
-		background-color: #FFDAB9;
+		background-color: #0a0a0a;
 	}
 	25%{
-		background-color: #FFE4B5;
+		background-color: #070707;
 	}
 	50%{
-		background-color: #FFDAB9;
+		background-color: #0a0a0a;
 	}
 	75%{
-		background-color: #FFEFD5;
+		background-color: #0e0d0d;
 	}
 	100%{
-		background-color: #FFDAB9;
+		background-color: #0a0a0a;
 	}
 }
 
 @-ms-keyframes peach_alive {
 	0%{
-		background-color: #FFDAB9;
+		background-color: #0a0a0a;
 	}
 	25%{
-		background-color: #FFE4B5;
+		background-color: #070707;
 	}
 	50%{
-		background-color: #FFDAB9;
+		background-color: #0a0a0a;
 	}
 	75%{
-		background-color: #FFEFD5;
+		background-color: #0e0d0d;
 	}
 	100%{
-		background-color: #FFDAB9;
+		background-color: #0a0a0a;
 	}
 }
 
 @keyframes peach_alive {
 	0%{
-		background-color: #FFDAB9;
+		background-color: #0a0a0a;
 	}
 	25%{
-		background-color: #FFE4B5;
+		background-color: #070707;
 	}
 	50%{
-		background-color: #FFDAB9;
+		background-color: #0a0a0a;
 	}
 	75%{
-		background-color: #FFEFD5;
+		background-color: #0e0d0d;
 	}
 	100%{
-		background-color: #FFDAB9;
+		background-color: #0a0a0a;
 	}
 }
 
@@ -120,6 +120,8 @@ body {
 	background-repeat: no-repeat no-repeat;
 	background-position:center 0px;
 	background-size: 50px 50px;
+	
+    filter: brightness(1.4);
 }
 
 .bulb-holder {
@@ -1303,8 +1305,17 @@ audio {
 
 
     /*controlling tablet width*/
-    /*@media only screen and (max-width: 720px){
+    @media only screen and (max-width: 720px){
     	.container {
     		-webkit-transform: scale(0.9);
     	}
-    }*/
+    	.balloons {
+    		width: 50px;
+    		height: 91px;
+    		background-size: 50px 91px;
+    	}
+    	.balloons h2 {
+    		font-size: 25px;
+    		display: block;
+    	}
+    }
